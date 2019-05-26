@@ -18,6 +18,7 @@ export default function Main() {
       const realm = await getRealm();
       const data = realm.objects('Repository').sorted('stars', true);
 
+      console.tron.log(realm.path);
       setRepositories(data);
     }
 
